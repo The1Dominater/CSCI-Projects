@@ -1,0 +1,3 @@
+br getbuf
+layout asm
+run

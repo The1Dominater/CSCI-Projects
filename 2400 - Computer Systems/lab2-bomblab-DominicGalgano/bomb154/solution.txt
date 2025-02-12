@@ -1,0 +1,6 @@
+All problems in computer science can be solved by another level of indirection.
+0 1 1 2 3 5 1
+4 0
+40 2
+128111
+3 6 2 4 5 1

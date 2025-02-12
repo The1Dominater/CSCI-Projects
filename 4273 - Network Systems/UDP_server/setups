@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Move to directory with server files
+cd /home/jovyan/CSCI4273/udp
+
+#Compile your c-program
+gcc udp_server.c -o server
+
+#Running your server with port number 5001
+./server 5001

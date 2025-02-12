@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#Compile c-programs
+gcc dfs_server.c -o dfs
+
+#Set the number of servers to start
+num_servers=$1
+main_dir=$PWD
+
+# Setup servers with directories
+# Loop through the specified number of servers and start them
+for ((i = 1; i <= $num_servers; i++)); do
+    # Create the port number
+    port=$((10000 + $i))
+    
+    # Create a directory for the server
+    dir="Server_$i"
+    mkdir $dir
+    
+    #Start each server in its own directory
+    echo "Starting server on port $port"
+    cd $dir
+    $main_dir/dfs $port
+    cd ..
+done
+
+echo "All servers started successfully"

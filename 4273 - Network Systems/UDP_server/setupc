@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Move to directory with server files
+cd /home/jovyan/CSCI4273/udp
+#IP address of client
+clientIP=127.0.0.1
+
+#Compile your c-program
+gcc udp_client.c -o client
+
+#Running your client with given server IP and port number
+./client $clientIP 5001

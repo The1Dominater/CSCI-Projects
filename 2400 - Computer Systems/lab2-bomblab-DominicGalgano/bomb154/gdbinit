@@ -1,0 +1,7 @@
+br phase_4
+br func4
+br phase_6
+br *0x555555555910
+br explode_bomb
+layout asm
+run solution.txt

@@ -1,0 +1,7 @@
+/* Run with: cat ctarget.l1.txt | ./hex2raw | ./ctarget */
+/* Pad with 24-bytes(0x18) because that is the size of the buffer */
+11 22 33 44 55 66 77 88
+11 22 33 44 55 66 77 88
+11 22 33 44 55 66 77 88
+/* Address of touch1 */
+99 25 40 00 00 00 00 00
